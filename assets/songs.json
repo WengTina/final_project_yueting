@@ -1,0 +1,107 @@
+[
+  {
+    "songName": "Step Back !",
+    "artistName": "1nonly & SXMPRA",
+    "albumArtImagePath": "assets/images/StepBack !.png",
+    "audioPath": "audios/StepBack.mp3",
+    "hashtags": []
+  },
+  {
+    "songName": "Stay With Me",
+    "artistName": "1nonly",
+    "albumArtImagePath": "assets/images/StayWithMe.png",
+    "audioPath": "audios/StayWithMe.mp3",
+    "hashtags": []
+  },
+  {
+    "songName": "BREAK DOWN",
+    "artistName": "$atori Zoom",
+    "albumArtImagePath": "assets/images/BREAKDOWN.png",
+    "audioPath": "audios/BreakDown.mp3",
+    "hashtags": []
+  },
+  {
+    "songName": "You Got Jokes",
+    "artistName": "Khantrast",
+    "albumArtImagePath": "assets/images/YouGotJokes.png",
+    "audioPath": "audios/YouGotJoke.mp3",
+    "hashtags": []
+  },
+  {
+    "songName": "Love Letters",
+    "artistName": "Slevpy808",
+    "albumArtImagePath": "assets/images/LoveLetters.png",
+    "audioPath": "audios/LoveLetters.mp3",
+    "hashtags": []
+  },
+  {
+    "songName": "PURE HATE",
+    "artistName": "Freddie Dredd",
+    "albumArtImagePath": "assets/images/PUREHATE.png",
+    "audioPath": "audios/PUREHATE.mp3",
+    "hashtags": []
+  },
+  {
+    "songName": "Chicago Freestyle",
+    "artistName": "Drake, Giveon",
+    "albumArtImagePath": "assets/images/ChicagoFreestyle.png",
+    "audioPath": "audios/ChicagoFreestyle.mp3",
+    "hashtags": []
+  },
+  {
+    "songName": "CODE MISTAKE",
+    "artistName": "CORPSE & Bring Me The Horizon",
+    "albumArtImagePath": "assets/images/CODEMISTAKE.png",
+    "audioPath": "audios/CodeMistake.mp3",
+    "hashtags": []
+  },
+  {
+    "songName": "NEXTBOT!",
+    "artistName": "HAARPER",
+    "albumArtImagePath": "assets/images/NEXTBOT!.png",
+    "audioPath": "audios/NextBot.mp3",
+    "hashtags": []
+  },
+  {
+    "songName": "EMPTY DREAMS",
+    "artistName": "CYPARISS",
+    "albumArtImagePath": "assets/images/EMPTYDREAMS.png",
+    "audioPath": "audios/EmptyDreams.mp3",
+    "hashtags": []
+  },
+  {
+    "songName": "Painkiller",
+    "artistName": "國蛋, Karencici",
+    "albumArtImagePath": "assets/images/Painkiller.png",
+    "audioPath": "audios/Painkiller.mp3",
+    "hashtags": []
+  },
+  {
+    "songName": "Strawberry Champagne ",
+    "artistName": "Dept",
+    "albumArtImagePath": "assets/images/StrawberryChampagne.png",
+    "audioPath": "audios/StrawberryChampagne.mp3",
+    "hashtags": []
+  },
+  {
+    "songName": "Suddenly",
+    "artistName": "ONE OK ROCK",
+    "albumArtImagePath": "assets/images/Suddenly.png",
+    "audioPath": "audios/suddenly.mp3",
+    "hashtags": []
+  },
+  {
+    "songName": "BIRDS OF A FEATHER",
+    "artistName": "Billie Eilish",
+    "albumArtImagePath": "assets/images/BIRDSOFAFEATHER.png",
+    "audioPath": "audios/BirdsOfAFeather.mp3",
+    "hashtags": []
+  },
+  {
+    "songName": "My Eyes Adored You",
+    "artistName": "Fujii Kaze",
+    "albumArtImagePath": "assets/images/MyEyesAdoredYou.png",
+    "audioPath": "audios/my-eyes-adored-you.mp3",
+    "hashtags": []
+  }
+]

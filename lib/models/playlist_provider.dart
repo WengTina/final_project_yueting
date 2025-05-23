@@ -16,7 +16,7 @@ class PlaylistProvider extends ChangeNotifier {
     notifyListeners();
   }
 
-  //audio player
+
   final AudioPlayer _audioPlayer = AudioPlayer();
   //durations
   Duration _CurrentDuration = Duration.zero;
@@ -37,13 +37,13 @@ class PlaylistProvider extends ChangeNotifier {
       print('Failed to load songs from JSON: $e');
     }
   }
-  //initially not playing
+ 
   bool _isPlaying = false;
-  //play the song
+
   void play() async {
     final String path = _playlist[_currentSongIndex!].audioPath;
-    await _audioPlayer.stop(); //stop current song
-    await _audioPlayer.play(AssetSource(path)); //play the new song
+    await _audioPlayer.stop();
+    await _audioPlayer.play(AssetSource(path)); 
     _isPlaying = true;
     notifyListeners();
   }

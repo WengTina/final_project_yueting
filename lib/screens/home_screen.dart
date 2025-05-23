@@ -39,7 +39,7 @@ class _HomeScreenState extends State<HomeScreen> {
             builder: (context, value, child) {
               final List<Song> playlist = value.playlist;
 
-              // 🔍 根據搜尋字串過濾播放清單
+             
               final List<Song> filteredList = playlist.where((song) {
                 final query = searchQuery.toLowerCase();
                 return song.songName.toLowerCase().contains(query) ||
@@ -48,7 +48,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
               return Column(
                 children: [
-                  // 🔍 搜尋框
+                  
                   Padding(
                     padding: const EdgeInsets.all(16.0),
                     child: TextField(
@@ -68,7 +68,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ),
 
-                  // 📜 歌曲清單
+                  
                   Expanded(
                     child: ListView.builder(
                       padding: const EdgeInsets.only(bottom: 80),
@@ -91,7 +91,7 @@ class _HomeScreenState extends State<HomeScreen> {
             },
           ),
 
-          // 🎵 mini player
+         
           const Positioned(
             left: 0,
             right: 0,

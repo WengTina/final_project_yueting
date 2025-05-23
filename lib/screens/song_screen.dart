@@ -21,9 +21,9 @@ class SongScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Consumer<PlaylistProvider>(
       builder: (context, value, child) {
-        //get playlist
+        
         final playlist = value.playlist;
-        //get current song index
+        
         final currentSong = playlist[value.currentSongIndex ?? 0];
 
         final List<String> availableHashtags = [
@@ -36,48 +36,48 @@ class SongScreen extends StatelessWidget {
           'Chill',
         ];
 
-        //return scaffold UI
+        
         return Scaffold(
           backgroundColor: Theme.of(context).colorScheme.surface,
-          //appBar: AppBar(title: Text('Song Screen')),
+          
           body: SafeArea(
             child: Padding(
               padding: const EdgeInsets.only(left: 25, right: 25, bottom: 25),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  //app bar
+                  
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      //back button
+                      
                       IconButton(
                         onPressed: () => Navigator.pop(context),
                         icon: const Icon(Icons.arrow_back),
                       ),
-                      //title
+                      
                       const Text('P L S Y L I S T'),
                       const SizedBox(width: 30),
                     ],
                   ),
                   const SizedBox(height: 25),
-                  //album artwork
+                  
                   NeuBox(
                     child: Column(
                       children: [
-                        //image
+                        
                         ClipRRect(
                           borderRadius: BorderRadius.circular(8),
                           child: Image.asset(currentSong.albumArtImagePath),
                         ),
 
-                        //song and artist name and icon
+                        
                         Padding(
                           padding: const EdgeInsets.all(15.0),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              //song and artist name
+                              
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
@@ -94,7 +94,7 @@ class SongScreen extends StatelessWidget {
                                 ],
                               ),
 
-                              //heart icon
+                              
                               const Icon(
                                 Icons.favorite,
                                 color: Color.fromARGB(255, 237, 177, 227),
@@ -107,7 +107,7 @@ class SongScreen extends StatelessWidget {
                   ),
                   const SizedBox(height: 25),
 
-                  // Hashtag
+                  
                   Wrap(
                     spacing: 8,
                     children:
@@ -131,7 +131,7 @@ class SongScreen extends StatelessWidget {
 
                   const SizedBox(height: 25),
 
-                  //song duration progress
+                  
                   Column(
                     children: [
                       Padding(
@@ -139,19 +139,19 @@ class SongScreen extends StatelessWidget {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            //start time
+                            
                             Text(formatTime(value.currentDuration)),
 
-                            //shuffle icon
+                            
                             Icon(Icons.shuffle),
-                            //repeat iocn
+                            
                             Icon(Icons.repeat),
-                            //end time
+                            
                             Text(formatTime(value.totalDuration)),
                           ],
                         ),
                       ),
-                      //song duration progress
+                      
                       SliderTheme(
                         data: SliderTheme.of(context).copyWith(
                           thumbShape: const RoundSliderThumbShape(
@@ -164,10 +164,10 @@ class SongScreen extends StatelessWidget {
                           value: value.currentDuration.inSeconds.toDouble(),
                           activeColor: Colors.green,
                           onChanged: (double double) {
-                            //during when the user is sliding around
+                            
                           },
                           onChangeEnd: (double double) {
-                            //sliding has finished, go to that
+                            
                             value.seek(Duration(seconds: double.toInt()));
                           },
                         ),
@@ -176,10 +176,10 @@ class SongScreen extends StatelessWidget {
                   ),
                   const SizedBox(height: 25),
 
-                  //playback controls
+                 
                   Row(
                     children: [
-                      //skip pervious
+                      
                       Expanded(
                         flex: 2,
                         child: GestureDetector(
@@ -189,7 +189,7 @@ class SongScreen extends StatelessWidget {
                       ),
                       const SizedBox(width: 20),
 
-                      //play pause
+                      
                       Expanded(
                         flex: 2,
                         child: GestureDetector(
@@ -203,7 +203,7 @@ class SongScreen extends StatelessWidget {
                       ),
                       const SizedBox(width: 20),
 
-                      //skip forward
+                      
                       Expanded(
                         flex: 2,
                         child: GestureDetector(

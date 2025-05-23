@@ -4,24 +4,24 @@ import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class ThemeProvider extends ChangeNotifier {
-  //initially, liht mode
+  
   ThemeData _themeData = lightMode;
 
-  //get theme
+ 
   ThemeData get themeData => _themeData;
 
-  // is dark mode
+
   bool get isDarkMode => _themeData == darkMode;
 
   ThemeProvider() {
     _loadThemeFromPrefs();
   }
 
-  //set THeme
+  
   set themeData(ThemeData themeData) {
     _themeData = themeData;
 
-    //update UI
+    
     notifyListeners();
     _saveThemeToPrefs();
   }
